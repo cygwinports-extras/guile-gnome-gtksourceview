@@ -1,0 +1,80 @@
+guile-gnome0-gtksourceview
+------------------------------------------
+guile-gnome is a Guile wrapper collection for the GNOME library
+stack. It ships with an wrapper engine that allows semi-automatic
+wrapping of GObject-based C APIs.
+
+Runtime requirements:
+  cygwin-1.5.24-2
+  g-wrap-1.9.8-1
+  glib2-2.12.13-1
+  guile-gnome0-gobject-2.15.94-1
+  guile-gnome0-gtk-2.15.94-1
+  gtk2-x11-2.10.14-1
+  gtksourceview-1.8.5-1
+  libguile17-1.8.2-1
+
+Build requirements:
+(besides corresponding -devel packages)
+  cygwin-1.5.24-2
+  autoconf2.5-2.61-1
+  automake1.10-1.10-1
+  binutils-20060817-1
+  cygport-0.3.5-1
+  gawk-3.1.5-4
+  gcc-core-3.4.4-3
+  libtool1.5-1.5.23a-2
+  make-3.81-1
+  pkg-config-0.21-1
+  sed-4.1.5-2
+
+Canonical website:
+  http://www.gnu.org/software/guile-gnome/
+
+Canonical download:
+  http://ftp.gnu.org/pub/gnu/guile-gnome/guile-gnome-gtksourceview/
+
+-------------------------------------------
+
+Build instructions:
+  unpack guile-gnome0-gtksourceview-1.8.0-X-src.tar.bz2
+    if you use setup to install this src package, it will be
+	 unpacked under /usr/src automatically
+  cd /usr/src
+  cygport ./guile-gnome0-gtksourceview-1.8.0-X.cygport all
+
+This will create:
+  /usr/src/guile-gnome0-gtksourceview-1.8.0-X-src.tar.bz2
+  /usr/src/guile-gnome0-gtksourceview-1.8.0-X.tar.bz2
+
+-------------------------------------------
+
+Files included in the binary package:
+
+  /usr/lib/guile-gnome-0/cyggw-guile-gnome-gtksourceview.dll
+  /usr/lib/guile-gnome-0/libgw-guile-gnome-gtksourceview.la
+  /usr/share/doc/Cygwin/guile-gnome0-gtksourceview-1.8.0.README
+  /usr/share/doc/guile-gnome0-gtksourceview-1.8.0/AUTHORS
+  /usr/share/doc/guile-gnome0-gtksourceview-1.8.0/COPYING
+  /usr/share/doc/guile-gnome0-gtksourceview-1.8.0/ChangeLog
+  /usr/share/doc/guile-gnome0-gtksourceview-1.8.0/HACKING
+  /usr/share/doc/guile-gnome0-gtksourceview-1.8.0/INSTALL
+  /usr/share/doc/guile-gnome0-gtksourceview-1.8.0/NEWS
+  /usr/share/doc/guile-gnome0-gtksourceview-1.8.0/README
+  /usr/share/guile-gnome-0/gnome/defs/gtksourceview-types.defs
+  /usr/share/guile-gnome-0/gnome/defs/gtksourceview.defs
+  /usr/share/guile-gnome-0/gnome/gtksourceview.scm
+  /usr/share/guile-gnome-0/gnome/gw/gtksourceview-spec.scm
+  /usr/share/guile-gnome-0/gnome/gw/gtksourceview.scm
+  /usr/share/guile-gnome-0/gnome/overrides/gtksourceview.defs
+
+------------------
+
+Port Notes:
+
+----- version 1.8.0-1 -----
+Initial release for Cygwin.
+
+
+Cygwin port maintained by:
+http://cygwinports.dotsrc.org/

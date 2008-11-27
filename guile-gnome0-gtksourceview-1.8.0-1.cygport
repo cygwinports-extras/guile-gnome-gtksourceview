@@ -1,0 +1,16 @@
+abi=0
+ORIG_PN=${PN/${abi}}
+
+DESCRIPTION="Guile GtkSourceView bindings"
+HOMEPAGE="http://www.gnu.org/software/guile-gnome/"
+SRC_URI="mirror://gnu/guile-gnome/${ORIG_PN}/${ORIG_PN}-${PV}.tar.gz"
+
+DIFF_EXCLUDES="dev-environ"
+
+src_compile() {
+	cd ${S}
+	cygautoreconf
+	cd ${B}
+	cygconf --disable-static --disable-Werror
+	cygmake -j1
+}
